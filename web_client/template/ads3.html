@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>ADS</title>
+    <title>ADS-3</title>
     <link rel="stylesheet" href="content.css">
     <link rel="stylesheet" href="../../utils.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
+<body onload="onload()">
     <section style="margin-left: auto; margin-right: auto;">
         <div id="title-bg" style="--bg-img: url('../../assets/images/HistoricPersonalComputersIllustration(2).png') ">
             <div class="title-content">
@@ -30,7 +30,7 @@
                 <div class="grid-container">
                     <div class="grid-item">
                         <p><b>STEP-01: INSERT 40</b></p>
-                        <img src="../..assets/data/DSAAT/step1.png" alt="">
+                        <img src="../../assets/data/DSAAT/step1.png" alt="">
                         <p style="text-align: center;">Fig. Inserted 40</p>
                     </div>
                     
@@ -88,27 +88,46 @@
                         <p style="text-align: center;">Fig. Inserted 50.</p>
                         <p>This imbalanced tree can be balanced by an RR rotation about the key value 30.</p>
                     </div>
+                    <div class="grid-item">
+                        <p style="text-align: center;">STEP-07(B): Balanced AVL after inserting 50</p>
+                        <img src="../../assets/data/DSAAT/step7b.png" alt="">
+                        <p style="text-align: center;">Fig. Balanced after Inserting 50</p>
+                    </div>
+                    <div class="grid-item">
+                        <h2>Conclusion</h2>
+                        <p><b>Hence, the AVL tree is perfectly balanced. That is all we have to discuss about "Well Balanced Trees". The rotation
+                            operation itself is very fast and simple, and is an excellent illustration of the usefulness in balancing the tree. So here
+                            we conclude our discussion. Thank You for reading</b></p>
+                            <h2>References</h2>
+                            <ol style="text-align: start; font-size: large;">
+                                <li><a href="https://www.youtube.com/watch?v=FNeL18KsWPc" style="color: white;">AVL Trees, AVL Sort, MIT Department of Computer Science</a></li>
+                                <li><a href="https://www.tutorialspoint.com/data_structures_algorithms/avl_tree_algorithm.htm" style="color: white;">Data Structures and Algorithms — AVL Trees, Tutorialspoint</a></li>
+                                <li><a href="https://pages.cs.wisc.edu/~ealexand/cs367/NOTES/AVL-Trees/index.html" style="color: white;">AVL Trees, Professor Eric Alexander</a></li>
+                                <li><a href="https://www.geeksforgeeks.org/how-to-determine-if-a-binary-tree-is-balanced/" style="color: white;">How to determine if a binary tree is height-balanced, Geeksforgeeks</a></li>
+                                <li><a href="http://www.cs.ecu.edu/karl/3300/spr16/Notes/DataStructure/Tree/balance.html" style="color: white;">Balanced Binary Search Trees, Professor Karl R. Abrahamson</a></li>
+                                <li><a href="https://webdocs.cs.ualberta.ca/~holte/T26/avl-trees.html" style="color: white;">Height-Balanced Binary Search Trees, Professor Robert Holte</a></li>
+                            </ol>
+                            <h2>See Also:</h2>
+                            <ol style="text-align: start; font-size: large;">
+                                <li><a href="https://www.youtube.com/playlist?list=PLgUwDviBIf0q8Hkd7bK2Bpryj2xVJk8Vk" style="color: white;">Striver Tree Series</a></li>
+                                <li><a href="https://takeuforward.org/interviews/strivers-sde-sheet-top-coding-interview-problems/" style="color: white;">Data Structures and Algorithms — SDE Sheet Practice Problems.</a></li>
+                                <li><a href="https://www.youtube.com/playlist?list=PLUl4u3cNGP63EdVPNLG3ToM6LaEUuStEY" style="color: white;">Introduction to Algorithms, Spring 2020, MIT</a></li>
+                            </ol>
+                    </div>
                 </div>
             </section>
-            <div class="grid-item">
-                <p style="text-align: center;">STEP-07(B): Balanced AVL after inserting 50</p>
-                <img src="../../assets/data/DSAAT/step7b.png" alt="">
-                <p style="text-align: center;">Fig. Balanced after Inserting 50</p>
-                <p><b>Hence, the AVL tree is perfectly balanced. That is all we have to discuss about "Well Balanced Trees". The rotation
-                    operation itself is very fast and simple, and is an excellent illustration of the usefulness in balancing the tree. So here
-                    we conclude our discussion. Thank You for reading</b></p>
-            </div>
+
 
             <div class="container">
                 <p><b><i>THANK YOU</i></b></p>
-                <ul class="pagination">
-                  <li class="icon">
+                <ul class="pagination" id="list">
+                  <li id="prev" class="icon" onclick="Previous()">
                     <a href="#"><span class="fa fa-angle-left"></span>Previous</a>
                   </li>
-                  <li><a href="ads.html">1</a></li>
-                  <li><a href="ads2.html">2</a></li>
-                  <li><a href="ads3.html">3</a></li>
-                  <li class="icon">
+                  <li><a href="ads.html" id="1">1</a></li>
+                  <li><a href="ads2.html" id="2">2</a></li>
+                  <li><a href="ads3.html" id="3">3</a></li>
+                  <li id="nxt" class="icon" onclick="Next()">
                     <a href="#">Next<span class="fa fa-angle-right"></span></a>
                   </li>
                 </ul>
@@ -117,7 +136,6 @@
     <footer class="site-footer">
         <div class="container">
         <div class="row">
-            
             <div class="col-md-4 col-sm-6 col-xs-12">
             <h1>Contact Us</h1>
             <ul class="social-icons">
