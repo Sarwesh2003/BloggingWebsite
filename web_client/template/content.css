@@ -28,14 +28,14 @@
 }
 
 #stmt{
-    margin-left: auto;
+  margin-left: auto;
 	margin-right: auto;
 	margin-bottom: auto;
 	margin-top: auto;
 	width: auto;
-    text-align: center; 
-    font-size: 100px;
-    margin-bottom: 3%;
+  text-align: center; 
+  font-size: 100px;
+  margin-bottom: 3%;
 }
 .title-content p{
     margin-left: auto;
@@ -54,7 +54,7 @@
     width: 100%;
     grid-template-rows: repeat(4,50%);
     grid-template-columns: repeat(2,50%);
-    align-items: center;
+
     justify-items: center;
     row-gap: 50px;
     column-gap: 20px;
