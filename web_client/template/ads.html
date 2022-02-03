@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="content.css">
-    <link rel="stylesheet" href="../utils.css">
+    <link rel="stylesheet" href=".\content.css">
+    <link rel="stylesheet" href="..\..\utils.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>ADS</title>
 </head>
@@ -45,7 +45,7 @@
                         
             </div>
             <div class="grid-item">
-                <img src="\assets\data\DSAAT\1.jpeg" alt="">
+                <img src="..\..\assets\data\DSAAT\1.jpeg" alt="">
             </div>
             
             <div class="grid-item">
@@ -92,13 +92,13 @@
                     same set of keys but the different order of insertion as an example to clarify this scenario .The keys are 5, 10, 20, 25,
                     30, 40, 50.</p>
                     <p><b>Case 1: </b>When the order of insertion is 30, 40, 10, 50 ,20 ,5, 35 -> height of the BST= log n.</p>
-                    <img src="\assets\data\DSAAT\2.jpeg" alt="">
+                    <img src="..\..\assets\data\DSAAT\2.jpeg" alt="">
                     <p style="text-align: center;">Fig: Height of the BST = log n</p>
                 
             </div>
             <div class="grid-item">
                 <p><b>Case 2: </b>When the order of insertion is 50, 40, 35, 30, 20, 10, 5 ->height of the BST=N.</p>
-                <img src="\assets\data\DSAAT\3.jpeg" alt="">
+                <img src="..\..\assets\data\DSAAT\3.jpeg" alt="">
                 <p style="text-align: center;">Fig: Height of the BST = N</p>
                 <p><b>NOTE: </b>So, the problem with BST is that we cannot control the height to be in the logarithmic range
                     (log N) and it becomes equal to linear(O(N)), which is the same as linear search.</p>
@@ -110,13 +110,13 @@
             <div class="grid-item">
                 <h2>How to know if tree is balanced?</h2>
                 <p>A tree is perfectly height-balanced if the left and right subtrees of an\ node are the same height. e.g.</p>
-                <img src="\assets\data\DSAAT\4.jpeg" height="400px" width="400px" alt="">
+                <img src="..\..\assets\data\DSAAT\4.jpeg" height="400px" width="400px" alt="">
                 <p>It is clear that at every level there are twice as many nodes as at the previous level, so we do indeed get H = O(logN).
                     However, perfect height balance is very rare: it is only possible if there are exactly 2^H-1 nodes!
                     As a practical alternative, we use trees that are 'almost' perfectly height balanced. We will say that a tree is
                     height-balanced if the heights of the left and right subtrees of each node are within 1. The following tree fits this
                     definition:</p>
-                    <img src="\assets\data\DSAAT\5.jpeg" height="400px" width="400px" alt="">
+                    <img src="..\..\assets\data\DSAAT\5.jpeg" height="400px" width="400px" alt="">
                     <p>
                         We will say this tree is height-balanced.
                         How can we tell if a tree is height-balanced? We have to check every node. The fastest is way is to start at the leaves
@@ -127,13 +127,13 @@
             </div>
             <div class="grid-item">
                 
-                <img src="\assets\data\DSAAT\6.jpeg" height="400px" width="400px" alt="">
+                <img src="..\..\assets\data\DSAAT\6.jpeg" height="400px" width="400px" alt="">
                 <p>C and D are leaves. Their subtrees are all height 0 so C and D are both perfectly balanced. Having finished D we can
                     compute the heights of B's subtrees</p>
-                    <img src="\assets\data\DSAAT\7.jpeg" height="400px" width="400px" alt="">
+                    <img src="..\..\assets\data\DSAAT\7.jpeg" height="400px" width="400px" alt="">
                 <p>B is not perfectly balanced, but the heights of of its subtrees differ only by 1, so B is regarded as height-balanced.
                     Now we can compute the balance of A</p>
-                <img src="\assets\data\DSAAT\8.jpeg" height="400px" width="400px" alt="">
+                <img src="..\..\assets\data\DSAAT\8.jpeg" height="400px" width="400px" alt="">
                 <p>Like B, A's two subtrees differ by 1 in height. We have now looked at every node; every one is height-balanced, so
                     the tree as a whole is considered to be height-balanced.</p>
             </div>
@@ -173,6 +173,6 @@
         </div>
         </div>
     </footer>
-      <script src="../main.js"></script>
+      <script src="..\..\main.js"></script>
 </body>
 </html>
