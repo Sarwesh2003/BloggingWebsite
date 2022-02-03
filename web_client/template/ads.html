@@ -22,8 +22,8 @@
           </div>
       </section>
 
-      <section style="margin-left: 30px; margin-right: 30px;">
-        <div class="grid-container">
+      <!-- <section style="margin-left: 30px; margin-right: 30px;">
+        <div class="grid-container"> -->
             <div class="grid-item">
                 <h1 style="color: #0AFF5C; text-align: center; margin-top: 50px; font-size: 30px;">What is Binary Search Tree?</h1>
                     <p>Binary search tree is a data structure that quickly allows us to
@@ -33,7 +33,7 @@
                             <li>It is called a search tree because it can be used to search for the presence of a number in O(log(n)) time.</li>
                         </ul></p>
                         <p>The properties that separate a binary search tree from a regular binary tree are:</p>
-                            <ul style="text-align: start;">
+                            <ul>
                                 <li>All nodes of left subtree are less than the root node</li>
                                 <li>All nodes of right subtree are more than the root node</li>
                                 <li>Both subtrees of each node are also BSTs i.e. they have the above two properties</li>
@@ -42,11 +42,12 @@
                         
             </div>
             <div class="grid-item">
-                <img src="..\..\assets\data\DSAAT\1.jpeg" alt="">
+                <img src="..\..\assets\data\ADS\1.png" alt="">
+                <p style="text-align: center;">Fig. Binary Tree</p>
             </div>
             
             <div class="grid-item">
-                <h2>Binary Search Tree Applications</h2>
+                <h2 style="color: #0AFF5C; text-align: center; font-size: 30px;">Binary Search Tree Applications</h2>
                 <ol style="text-align: start;">
                     <li style="margin: 10px; font-size: large;">BSTs are used for indexing and multi-level indexing.</li>
                     <li style="margin: 10px; font-size: large;">They are also helpful to implement various searching algorithms.</li>
@@ -55,8 +56,8 @@
                 </ol>
             </div>
             <div class="grid-item">
-                <h2>Time Complexity of Binary Search Tree: </h2>
-                <table border="1" cellpadding = "5" cellspacing = "5" bgcolor="white" style="color: black; font-size: large;">
+                <h2 style="color: #0AFF5C; text-align: center; font-size: 30px;">Time Complexity of Binary Search Tree: </h2>
+                <table border="1" cellpadding = "5" cellspacing = "5" bgcolor="white" style=" margin-left: auto; margin-right: auto; color: black; font-size: large;">
                     <tr>
                       <th>Operation</th>
                       <th>Best Case Complexity</th>
@@ -82,64 +83,65 @@
                         <td>O(n)</td>
                     </tr>
                   </table> 
+                  <p style="text-align: center;">Fig. Time Complexity of BST Operations</p>
         </div>  
-            <div class="grid-item">
-                <h2>Problems/Drawbacks with Binary Search Tree</h2>
-                <p>The height of a binary search tree is determined by the order<br>in which the elements are inserted. Say, we take the
-                    same set of keys but the different order of insertion as an example to clarify this scenario .The keys are 5, 10, 20, 25,
-                    30, 40, 50.</p>
-                    <p><b>Case 1: </b>When the order of insertion is 30, 40, 10, 50 ,20 ,5, 35 -> height of the BST= log n.</p>
-                    <img src="..\..\assets\data\DSAAT\2.jpeg" alt="">
-                    <p style="text-align: center;">Fig: Height of the BST = log n</p>
-                
-            </div>
-            <div class="grid-item">
-                <p><b>Case 2: </b>When the order of insertion is 50, 40, 35, 30, 20, 10, 5 ->height of the BST=N.</p>
-                <img src="..\..\assets\data\DSAAT\3.jpeg" alt="">
-                <p style="text-align: center;">Fig: Height of the BST = N</p>
-                <p><b>NOTE: </b>So, the problem with BST is that we cannot control the height to be in the logarithmic range
-                    (log N) and it becomes equal to linear(O(N)), which is the same as linear search.</p>
-            </div>
+          <!-- </div> 
+      </section> -->
 
-
-
-            
-            <div class="grid-item">
-                <h2>How to know if tree is balanced?</h2>
-                <p>A tree is perfectly height-balanced if the left and right subtrees of an\ node are the same height. e.g.</p>
-                <img src="..\..\assets\data\DSAAT\4.jpeg" height="400px" width="400px" alt="">
-                <p>It is clear that at every level there are twice as many nodes as at the previous level, so we do indeed get H = O(logN).
-                    However, perfect height balance is very rare: it is only possible if there are exactly 2^H-1 nodes!
-                    As a practical alternative, we use trees that are 'almost' perfectly height balanced. We will say that a tree is
-                    height-balanced if the heights of the left and right subtrees of each node are within 1. The following tree fits this
-                    definition:</p>
-                    <img src="..\..\assets\data\DSAAT\5.jpeg" height="400px" width="400px" alt="">
-                    <p>
-                        We will say this tree is height-balanced.
-                        How can we tell if a tree is height-balanced? We have to check every node. The fastest is way is to start at the leaves
-                        and work your way up. When you reach a node, you will know the heights of its two subtrees; from that you can tell
-                        whether it is height-balanced and also compute the node's height (for use by its parent). For example, in the tree
-                        above
-                    </p>
-            </div>
-            <div class="grid-item">
-                
-                <img src="..\..\assets\data\DSAAT\6.jpeg" height="400px" width="400px" alt="">
-                <p>C and D are leaves. Their subtrees are all height 0 so C and D are both perfectly balanced. Having finished D we can
-                    compute the heights of B's subtrees</p>
-                    <img src="..\..\assets\data\DSAAT\7.jpeg" height="400px" width="400px" alt="">
-                <p>B is not perfectly balanced, but the heights of of its subtrees differ only by 1, so B is regarded as height-balanced.
-                    Now we can compute the balance of A</p>
-                <img src="..\..\assets\data\DSAAT\8.jpeg" height="400px" width="400px" alt="">
-                <p>Like B, A's two subtrees differ by 1 in height. We have now looked at every node; every one is height-balanced, so
-                    the tree as a whole is considered to be height-balanced.</p>
-            </div>
-            
-          </div> 
-      </section>
+      <div class="grid-item">
+        <h2 style="color: #0AFF5C; text-align: center; font-size: 30px;">Problems/Drawbacks with Binary Search Tree</h2>
+        <p>The height of a binary search tree is determined by the order<br>in which the elements are inserted. Say, we take the
+            same set of keys but the different order of insertion as an example to clarify this scenario .The keys are 5, 10, 20, 25,
+            30, 40, 50.</p>
+            <p><b>Case 1: </b>When the order of insertion is 30, 40, 10, 50 ,20 ,5, 35 -> height of the BST= log n.</p>
+            <img src="..\..\assets\data\ADS\2.png" alt="">
+            <p style="text-align: center;">Fig: Height of the BST = log n</p>
+      
+        <p><b>Case 2: </b>When the order of insertion is 50, 40, 35, 30, 20, 10, 5 ->height of the BST=N.</p>
+        <img src="..\..\assets\data\ADS\3.png" alt="">
+        <p style="text-align: center;">Fig: Height of the BST = N</p>
+        <p><b>NOTE: </b>So, the problem with BST is that we cannot control the height to be in the logarithmic range
+            (log N) and it becomes equal to linear(O(N)), which is the same as linear search.</p>
+    </div>
+    
+    <div class="grid-item">
+        <h2 style="color: #0AFF5C; text-align: center; font-size: 30px;">How to know if tree is balanced?</h2>
+        <p>A tree is perfectly height-balanced if the left and right subtrees of any node are the same height. e.g.</p>
+        <img src="..\..\assets\data\ADS\4.png" height="400px" width="400px" alt="">
+        <p style="text-align: center;">Fig. Perfectly Balanced BST</p>
+        <p>It is clear that at every level there are twice as many nodes as at the previous level, so we do indeed get H = O(logN).
+            However, perfect height balance is very rare: it is only possible if there are exactly 2^H-1 nodes!
+            As a practical alternative, we use trees that are 'almost' perfectly height balanced. We will say that a tree is
+            height-balanced if the heights of the left and right subtrees of each node are within 1. The following tree fits this
+            definition:</p>
+            <img src="..\..\assets\data\ADS\5.png" height="400px" width="400px" alt="">
+            <p style="text-align: center;">Fig. Height Balanced Binary Tree</p>
+            <p>
+                We will say this tree is height-balanced.
+                How can we tell if a tree is height-balanced? We have to check every node. The fastest is way is to start at the leaves
+                and work your way up. When you reach a node, you will know the heights of its two subtrees; from that you can tell
+                whether it is height-balanced and also compute the node's height (for use by its parent). For example, in the tree
+                above
+            </p>
+    </div>
+    <div class="grid-item">
+        
+        <img src="..\..\assets\data\ADS\6.png" height="400px" width="400px" alt="">
+        <p style="text-align: center;">Fig. Calculating Height of BST</p>
+        <p>C and D are leaves. Their subtrees are all height 0 so C and D are both perfectly balanced. Having finished D we can
+            compute the heights of B's subtrees</p>
+            <img src="..\..\assets\data\ADS\7.png" height="400px" width="400px" alt="">
+            <p style="text-align: center;">Fig. Calculating Height of BST</p>
+        <p>B is not perfectly balanced, but the heights of of its subtrees differ only by 1, so B is regarded as height-balanced.
+            Now we can compute the balance of A</p>
+        <img src="..\..\assets\data\ADS\8.png" height="400px" width="400px" alt="">
+        <p style="text-align: center;">Fig. Calculating Height of BST</p>
+        <p>Like B, A's two subtrees differ by 1 in height. We have now looked at every node; every one is height-balanced, so
+            the tree as a whole is considered to be height-balanced.</p>
+    </div>
       
       <div class="container">
-        <p><b><i>THANK YOU</i></b></p>
+        <p style="color: #0AFF5C; text-align: center; font-size: 30px;"><b><i>Next: Let's Understand AVL Trees</i></b></p>
         <ul class="pagination" id="list">
           <li id="prev" class="icon" onclick="Previous()">
             <a href="#"><span class="fa fa-angle-left"></span>Previous</a>

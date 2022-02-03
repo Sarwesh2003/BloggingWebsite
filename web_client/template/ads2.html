@@ -15,8 +15,7 @@
             </div>
           </div>
       </section>
-    <section style="margin-left: 30px; margin-right: 30px;">
-        <div class="grid-container">
+
             <div class="grid-item">
                 <h1 style="color: #0AFF5C; text-align: center; margin-top: 50px; font-size: 30px;">What is AVL Trees?</h1>
                 <p>In computer science , an AVL tree (named after inventors Adelson-Velsky and Landis) is a self-balancing binary
@@ -40,38 +39,94 @@
             </div>
             
             <div class="grid-item">
-                <h2>Left-Left Rotation</h2>
-                <img src="../../assets/data/DSAAT/ll.jpeg" alt="">
+                <h2 style="color: #0AFF5C; text-align: center; font-size: 30px;">Left-Left Rotation</h2>
+                <img src="../../assets/data/ADS/9.png" alt="">
                 <p style="text-align: center;">Fig. Balancing a BST via LL rotation</p>
                 <p>If a tree becomes unbalanced, when a node is inserted into the left subtree of the left subtree, then we call it a
                     LL-imbalance , so let us call this rotation also as LL-rotation .</p>
             </div>
             <div class="grid-item">
-                <h2>Right-Right Rotation</h2>
-                <img src="../../assets/data/DSAAT/rr.jpeg" alt="">
+                <h2 style="color: #0AFF5C; text-align: center; font-size: 30px;">Right-Right Rotation</h2>
+                <img src="../../assets/data/ADS/10.png" alt="">
                 <p style="text-align: center;">Fig. Balancing a BST via RR rotation</p>
                 <p>If a tree becomes unbalanced, when a node is inserted into the right subtree of the right subtree, then we call it a
                     RR-imbalance , so let us call this rotation also as RR-rotation.</p>
             </div>  
             <div class="grid-item">
-                <h2>Left-Right Rotation</h2>
+                <h2 style="color: #0AFF5C; text-align: center; font-size: 30px;">Left-Right Rotation</h2>
                 <p>A left-right rotation is a combination of left rotation followed by right rotation.</p>
-                <img src="../../assets/data/DSAAT/lr.jpeg" alt="">
+                
+                <table border="1" cellpadding = "5" cellspacing = "5" style="max-width: 800px; margin-left: auto; margin-right: auto; color: white; font-size: large;">
+                    <tr>
+                      <th>Figure</th>
+                      <th>Discription</th>
+                    </tr>
+                    <tr>
+                      <td><img src="../../assets/data/ADS/t1.png" alt=""></td>
+                      <td>A node has been inserted into the right subtree of the left subtree.
+                            This makes C an unbalanced node. Thses scenerios cause AVL tree to perform
+                            left-right rotation.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><img src="../../assets/data/ADS/t2.png" alt=""></td>
+                      <td>We first perform the left rotation on the left subtree of C. This makes A, the left subtree of B.</td>
+                    </tr>
+                    <tr>
+                        <td><img src="../../assets/data/ADS/t3.png" alt=""></td>
+                        <td>Node C is still unbalanced, however now, it is because of the left subtree of the left subtree.</td>
+                    </tr>
+                    <tr>
+                        <td><img src="../../assets/data/ADS/t4.png" alt=""></td>
+                        <td>We shall now right-rotate the tree , making B the new root node of this subtree. C now because the right subtree of its own left subtree.</td>
+                    </tr>
+                    <tr>
+                        <td><img src="../../assets/data/ADS/t5.png" alt=""></td>
+                        <td>This tree is now balanced.</td>
+                    </tr>
+                  </table> 
+
                 <p style="text-align: center;">Fig. Balancing a BST via LR rotation</p>
             </div>
             <div class="grid-item">
-                <h2>Right-Left Rotation</h2>
+                <h2 style="color: #0AFF5C; text-align: center; font-size: 30px;">Right-Left Rotation</h2>
                 <p>The second type of double rotation is Right-Left Rotation. It is a combination of right rotation followed by left rotation.</p>
-                <img src="../../assets/data/DSAAT/rl.jpeg" alt="">
+                <table border="1" cellpadding = "5" cellspacing = "5" style="max-width: 800px; margin-left: auto; margin-right: auto; color: white; font-size: large;">
+                    <tr>
+                      <th>Figure</th>
+                      <th>Discription</th>
+                    </tr>
+                    <tr>
+                      <td><img src="../../assets/data/ADS/t6.png" alt=""></td>
+                      <td>A node has been inserted into the left subtree of the right subtree.
+                            This makes A an unbalanced node with balance factor 2.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><img src="../../assets/data/ADS/t7.png" alt=""></td>
+                      <td>First, we perform the right rotation along C node, making C, the right subtree of its own left subtree B.
+                          Now, B becomes the right subtree of A.</td>
+                    </tr>
+                    <tr>
+                        <td><img src="../../assets/data/ADS/t8.png" alt=""></td>
+                        <td>Node A is still unbalanced because of the right subtree of its right subtree and requires a left rotation.</td>
+                    </tr>
+                    <tr>
+                        <td><img src="../../assets/data/ADS/t9.png" alt=""></td>
+                        <td>A left rotation is performed by making B the new root node of the subtree. A becomes the left subtree of its right subtree B.</td>
+                    </tr>
+                    <tr>
+                        <td><img src="../../assets/data/ADS/t10.png" alt=""></td>
+                        <td>This tree is now balanced.</td>
+                    </tr>
+                  </table> 
                 <p style="text-align: center;">Fig. Balancing a BST via RL rotation</p>
             </div>
             
-          </div> 
-      </section>
 
 
       <div class="container">
-        <p><b><i>THANK YOU</i></b></p>
+        <p style="color: #0AFF5C; text-align: center; font-size: 30px;"><b><i>Next: Construction of AVL Tree</i></b></p>
         <ul class="pagination" id="list">
           <li id="prev" class="icon" onclick="Previous()">
             <a href="#"><span class="fa fa-angle-left"></span>Previous</a>

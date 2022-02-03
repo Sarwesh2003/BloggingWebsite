@@ -52,16 +52,15 @@
     margin-top: 50px;
     display: inline-grid;
     width: 100%;
-    
     grid-template-columns: repeat(2,50%);
-
     justify-items: center;
     row-gap: 50px;
     column-gap: 20px;
   }
 
   .grid-item{
-    max-width: 800px;
+    max-width: 1200px;
+    padding: 10px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -71,11 +70,21 @@
   .grid-item p{
     margin-left: auto;
     margin-right: auto;
-    margin-top: 0px;
     text-align: start;
     font-family: var(--font1);
     font-size: 20px;
   }
+
+  .grid-item ul{
+    text-align: start;
+    font-size: large;
+  }
+
+  .grid-item ol{
+    text-align: start;
+    font-size: large;
+  }
+
 
   .grid-item img{
       height: auto;
@@ -94,13 +103,14 @@
     #title{
         font-size: 30px;
     }
-    
+    .title-content p{
+      font-size: 15px;
+  }
     .grid-container{
 	  display: block;
       flex: 1;
 	}
-	.grid-item {
-        
+	.grid-item {  
 	  flex: 2
 	}
 	.grid-item img {

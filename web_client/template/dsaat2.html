@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="content.css">
+    <link rel="stylesheet" href="../../utils.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>DSAAT-2</title>
+</head>
+<body>
+
+      <section style="margin-left: auto; margin-right: auto;">
+        <div id="title-bg" style="--bg-img: url('../../assets/images/dsaat.jpg') ">
+            <div class="title-content">
+                <p id="title">Discrete Structures and Automata Theory</p>
+                <p id="stmt" style="color: #C185FE;">Automata Theory Limitations and Applications</p>
+                <p>The term "automata" comes from the Greek  "αὐτόματα"<br>
+                    meaning "self-acting". An automaton (plural of Automata)<br>
+                    is an abstract, self-propelled computing device<br>
+                    that automatically performs a given set of tasks.</p>
+            </div>
+          </div>
+      </section>
+
+            <div class="grid-item">
+                <h1 style="color: #C185FE; text-align: center; margin-top: 50px; font-size: 30px;">Applications of Automata</h1>
+                
+                <!-- Application 1 -->
+                <h2 style="color: #C185FE; text-align: center;">Lexical Analyser</h1>
+                    <ol style="list-style-type: disc;">
+                        <li>Lexical analysis is the first step in the compiler, also known as a scanner. Converts a high-level input program into a sequence of tokens. </li>
+                        <li>Lexical analysis can be implemented using deterministic finite automata. </li>
+                        <li>The result is a sequence of tokens  sent to the parser for parsing </li>
+                    </ol>
+                    <img src="../../assets/data/DSAAT/1.png" alt="">
+                    <p style="text-align: center;">Fig: Lexical Analyser</p>
+
+                    <!-- Application 2 -->
+                    <h2 style="color: #C185FE; text-align: center;">Video Games: Pac-Man's Ghosts</h1>
+                    <p>
+                        The ghosts in Pac-Man have four behaviors:
+                    </p>
+                    <ol>
+                        <li>Wander through a maze at random.</li>
+                        <li>Pursue Pac-Man while he's in sight.</li>
+                        <li>After Pac-Man eats the power pill, he runs away from Pac-Man.</li>
+                        <li>Return to the central base for replay.</li>
+                    </ol>
+                    <img src="../../assets/data/DSAAT/2.png" alt="">
+                    <p style="text-align: center;">Fig: Screenshot of a Pacman Clone</p>
+
+                    <!-- Application 3 -->
+                    <h2 style="color: #C185FE; text-align: center;">For designing the parsing phase of a compiler (Syntax Analysis).</h1>
+                    <p>Parsing is used to obtain a string using grammar generation rules. 
+                        Used to check if a string is acceptable. The compiler is used to check the correct syntax of a string. 
+                        The parser takes input and builds a parse tree.<br>
+                        A parser can be of two types:
+                    </p>
+                    <ul style="list-style-type: disc;">
+                        <li><b>Top-Down Parser:</b> Top-down parsing starts from the top with the start-symbol and derives a string using a parse tree.</li>
+                        <li><b>Bottom-Up Parser: </b> Bottom-up parsing starts from the bottom with the string and comes to the start symbol using a parse tree.</li>
+                    </ul>
+                    <img src="../../assets/data/DSAAT/3.png" alt="">
+                    <p style="text-align: center;">Fig: Parsing</p>
+
+                    <!-- Application 4 -->
+                    <h2 style="color: #C185FE; text-align: center;">Speech Recognition</h1>
+                        <ul style="list-style-type: disc;">
+                            <li>Speech recognition through system is the generation enhancement this is succesful to perceive phrases and terms in spoken language and convert them to a system-readable format. </li>
+                            <li>Receiving phrases and terms from actual international after which transformed it into system readable language robotically is correctly solved through the usage of finite nation system.</li>
+                        </ul>
+                    <img src="../../assets/data/DSAAT/4.png" alt="">
+                    <p style="text-align: center;">Fig: Speech Recognition Research Flowchart</p>
+            </div>
+            
+            
+            <div class="grid-item">
+                <h1 style="color: #C185FE; text-align: center; font-size: 30px;">Limitations of Automata</h1>
+                <ol>
+                    <li style="margin: 20px;">Any non-deterministic Finite automata can be converted to a corresponding deterministic Finite automata, but not every non-deterministic PDA can be converted to a deterministic PDA.</li>
+                    <li style="margin: 20px;">There is no state machine that can find and recognize the same set of binary strings of zeros and ones.</li>
+                    <li style="margin: 20px;">The expressive power of non-deterministic PDAs is greater than that of deterministic PDAs. This means that there are contextless grammars from which you cannot build a  deterministic PDA. For example, you cannot build a deterministic PDA for L={w|w is a palindrome}.</li>
+                    <li style="margin: 20px;">The algorithm for determining whether there is  a deterministic PDA for a grammar is unknown.</li>
+                    <li style="margin: 20px;">PDA can not apprehend context-touchy and unrestricted grammar.</li>
+                    <li style="margin: 20px;">Unable to determine whether PDA recognizes all sets of  strings for input characters</li>
+                </ol>
+            </div>
+
+            <div class="grid-item">
+                <h1 style="color: #C185FE; text-align: center; font-size: 30px;">Conclusion</h1>
+                <p>Automata theory is one of the major branches of computational theory concerning how effectively algorithms can be used to solve problems in computational models. The four automata suites are capable of accurately performing tasks such as lexical analysis, speech recognition and more. Of course there are other automaton applications too, but by far the most popular is above. But it also has certain limitations as none of the four automata families have been able to eliminate its shortcomings.</p>
+            </div>
+
+            <div class="grid-item">
+                <h1 style="color: #C185FE; text-align: center; font-size: 30px;">References</h1>
+                <ol>
+                    <li style="margin: 20px;">E. Gribkoff ,”Applications of Deterministic Finite Automata”,2013.</li>
+                    <li style="margin: 20px;">M. Mohri, F. Pereira, M. Riley,”Weighted Automata in Text and Speech Processing”,2014.</li>
+                    <li style="margin: 20px;" ><a style="color: white;" href="https://er.yuvayana.org/theory-of-automata-definition-with-real-time-example/#:~:text=Automatic%20photo%20printing%20machines%2C%20artificial,real%20time%20examples%20of%20automata.">Article 1</a></li>
+                    <li style="margin: 20px;"><a style="color: white;" href="https://www.tutorialspoint.com/explain-the-various-applications-of-automata-in-toc">Article 2</a></li>
+                    <li style="margin: 20px;"><a style="color: white;" href="https://www.javatpoint.com/theory-of-automata">Article 3</a></li>
+                    <li style="margin: 20px;"><a style="color: white;" href="https://cs.stanford.edu/people/eroberts/courses/soco/projects/2004-05/automata-theory/basics.html">Article 4</a></li>
+                </ol>
+            </div>
+
+
+      <div class="container">
+        
+        <ul class="pagination">
+          <li class="icon">
+            <a href="#"><span class="fa fa-angle-left"></span>Previous</a>
+          </li>
+          <li><a href="dsaat.html">1</a></li>
+          <li><a href="dsaat2.html">2</a></li>
+          <li class="icon">
+            <a href="#">Next<span class="fa fa-angle-right"></span></a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Site footer -->
+    <footer class="site-footer">
+        <div class="container">
+        <div class="row">
+            
+            <div class="col-md-4 col-sm-6 col-xs-12">
+            <h1>Contact Us</h1>
+            <ul class="social-icons">
+                <li><a class="facebook" href="https://www.facebook.com/rohan.golawar.5" target="about:blank"><i class="fa fa-facebook"></i></a></li>
+                <li><a class="twitter" href="https://twitter.com/_int_32" target="about:blank"><i class="fa fa-twitter"></i></a></li>
+                <li><a class="dribbble" href="https://github.com/Sarwesh2003/BloggingWebsite.git" target="about:blank"><i class="fa fa-github"></i></a></li>
+                <li><a class="linkedin" href="https://www.linkedin.com/in/sarthak-wakchoure-35a14018a/" target="about:blank"><i class="fa fa-linkedin"></i></a></li>   
+            </ul>
+            </div>
+        </div>
+        </div>
+    </footer>
+      <script src="../main.js"></script>
+</body>
+</html>
