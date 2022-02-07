@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="content.css">
+    <link rel="stylesheet" href="../../utils.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>DMADM-2</title>
+</head>
+
+<body>
+
+    <section style="margin-left: auto; margin-right: auto;">
+        <div id="title-bg" style="--bg-img: url('../../assets/images/HistoricPersonalComputersIllustration.png') ">
+            <div class="title-content">
+                <p id="title">Database Management and Data Mining</p>
+                <p id="stmt" style="color: #E79DF9;">Big data storage and processing</p>
+                <p>The collection of data provided by various organizations<br>though be in combination of structured,
+                    semi structured<br>or unstructured is known as Big Data.
+                    Its information can be<br>used and mined for predictive model analysis as well<br>for projects
+                    related to machine learning.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="grid-item">
+        <h1 style="color: #C185FE; text-align: center; margin-top: 50px; font-size: 35px;">What is Big Data Storage?
+        </h1>
+        <p> &nbsp;&nbsp;&nbsp; The term "big data storage" refers to a storage infrastructure designed specifically to
+            store,
+            manage and retrieve large volumes of large amounts of data.
+            A big data storage solution enables applications and services to easily access, use, store, sort and process
+            large amounts of data. It connects storage infrastructure to computing servers that enable quick operations
+            on large amounts of data. Furthermore, most big data analytics solutions such as Hadoop, Cassandra, and
+            NoSQL are
+            natively supported by most big data storage architectures/infrastructures.
+            Tools used for big data storage are listed below. </p>
+
+        <div class="grid-container" style="margin-top: 10px;">
+            <div class="grid-item">
+                <ol style="font-size: larger;">
+                    <li style="margin: 20px;">Apache Hadoop</li>
+                    <li style="margin: 20px;">Microsoft HDInsight</li>
+                    <li style="margin: 20px;">NoSQL</li>
+                    <li style="margin: 20px;">Hive</li>
+                    <li style="margin: 20px;">Sqoop</li>
+                </ol>
+            </div>
+            <div class="grid-item" style="list-style-type: '4';">
+                <p>6. Big data in EXCEL</p>
+                <p>7. PolyBase</p>
+                <p>8. Presto</p>
+                <p>9. Apache Spark</p>
+                <p>10. MongoDB</p>
+            </div>
+        </div>
+        <img src="..\..\assets\data\DMADM\3.jpg">
+        <p style="text-align: center;">Fig. Illustration of Big Data Storage</p>
+    </div>
+
+
+    <div class="grid-item">
+        <h1 style="color: #C185FE; text-align: center; font-size: 35px;">Challenges</h1>
+        <h2 style="color: #C185FE; text-align: center;">Size and Storage Costs</h2>
+        <p>As the demands of exchange of information increase the size and space also increases so does the cost to
+            maintain it.
+            As Big data grows exponentially it requires substantial space for storage.
+            Hence one must ensure that if the rate of collection of data increases the capacity of storage must be
+            maintained accordingly.</p>
+        <h2 style="color: #C185FE; text-align: center;">Data Transfer Rates</h2>
+        <p>Due to increase in storage capacity it becomes difficult to transfer huge sums of data in less time.
+            Thus this situation must have a solution otherwise the consumer demand will start to decrease.</p>
+        <h2 style="color: #C185FE; text-align: center;">Security</h2>
+        <p>Whenever the Big Data can consist of financial data, identity, corruptive and sensitive data it becomes a
+            threat as criminals can exploit and have direct access if it remains unprotected.Thus becoming a liability.
+        </p>
+        <h2 style="color: #C185FE; text-align: center;">High availability</h2>
+        <p>One must ensure that regardless of storage capacity the data must be available to everyone in order to stick
+            in the competition.</p>
+    </div>
+
+    <div class="grid-item">
+        <h1 style="color: #C185FE; text-align: center; font-size: 35px;">Big Data Processing</h1>
+
+        <p>&nbsp;&nbsp;&nbsp;Big Data processing on a large scale is a process that uses methods, programs, and models
+            to synthesize
+            useful information from large volumes of data.As we have seen earlier the big data is usually stored on
+            hundreds or even thousands of servers so the effectiveness of message passing of traditional programming
+            model is lost.
+            In order to improve the performance of NoSQl databases a new kind of programming called parallel programming
+            can be implemented.
+            One of the most popular programming models for big data processing using large-scale commodity clusters is
+            MapReduce.
+            It was developed by Yahoo and proposed by Google. Programmers have programmed the functions of Map and
+            Reduce so that the
+            Big Data can be accessed and distributed over multiple nodes.Being one of the most simplistic programs,
+            programmers prefer to use it for Big Data, thus having an advantage. </p>
+        <img src="..\..\assets\data\DMADM\4.jpg">
+        <p style="text-align: center;">Fig. Illustration of Big Data Processing</p>
+
+
+        <p>&nbsp;&nbsp;&nbsp;Facebook(Meta) also developed a wrapper for MapReducer called Hive.
+            These wrapper provide an environment which was open source with simple coding developments, programmers need
+            not deal with MapReduce complexities.</p>
+        <img src="..\..\assets\data\DMADM\5.png" width="200px" height="200px">
+        <p style="text-align: center;">Fig. Hive Logo</p>
+
+        <p>&nbsp;&nbsp;&nbsp;Big data processing is performed with Hadoop, an implementation of MapReduce that is
+            open-source. Some cloud providers, like Amazon, even offer this software.</p>
+        <img src="..\..\assets\data\DMADM\6.png" width="200px" height="200px">
+        <p style="text-align: center;">Fig. Hadoop Logo</p>
+
+        <p>&nbsp;&nbsp;&nbsp;A competing system to Hadoop called Spark originated at the University of California at
+            Berkeley and is designed
+            to solve disk I/O limitations while improving performance.With Spark, all computations are performed within
+            memory,
+            eliminating the Hadoop disk overhead limitation for iterative processes.
+            Spark also allows data to be cached in memory, allowing the data to be used to perform in-memory analytics.
+        </p>
+        <img src="..\..\assets\data\DMADM\7.png" width="200px" height="200px">
+        <p style="text-align: center;">Fig. Spark Logo</p>
+        <p>&nbsp;&nbsp;&nbsp;Another technique for profiling MapReduce applications involves simulating various
+            scenarios to find
+            possible bottlenecks and assess the performance of the modified applications based on the profiles.
+            It is evident that the simple Hadoop setup would not be efficient for big data analytics,
+            and new tools and techniques are needed to automate provisioning decisions. </p>
+    </div>
+
+
+
+
+    <div class="container">
+        <p style="color: #0AFF5C; text-align: center; font-size: 30px;"><b><i>Next: Advantages and Disadvantages of Big Data Storage?</i></b>
+        </p>
+        <ul class="pagination">
+            <li class="icon">
+                <a href="#"><span class="fa fa-angle-left"></span>Previous</a>
+            </li>
+            <li><a href="dmadm.html">1</a></li>
+            <li><a href="dmadm2.html">2</a></li>
+            <li><a href="dmadm3.html">3</a></li>
+            <li class="icon">
+                <a href="#">Next<span class="fa fa-angle-right"></span></a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Site footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <h1>Contact Us</h1>
+                    <ul class="social-icons">
+                        <li><a class="facebook" href="https://www.facebook.com/rohan.golawar.5" target="about:blank"><i
+                                    class="fa fa-facebook"></i></a></li>
+                        <li><a class="twitter" href="https://twitter.com/_int_32" target="about:blank"><i
+                                    class="fa fa-twitter"></i></a></li>
+                        <li><a class="dribbble" href="https://github.com/Sarwesh2003/BloggingWebsite.git"
+                                target="about:blank"><i class="fa fa-github"></i></a></li>
+                        <li><a class="linkedin" href="https://www.linkedin.com/in/sarthak-wakchoure-35a14018a/"
+                                target="about:blank"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../main.js"></script>
+</body>
+
+</html>
